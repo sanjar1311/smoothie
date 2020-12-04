@@ -1,0 +1,34 @@
+.sitenav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.sitenav__list {
+  @include reset-list;
+  display: flex;
+  align-items: center;
+}
+
+.sitenav__list--left .sitenav__item{
+  margin-right: 25px;
+}
+.sitenav__list--right .sitenav__item{
+  margin-left: 25px;
+}
+.sitenav__link {
+  text-decoration: none;
+  color: #433840;
+  font-size: 18px;
+
+  &:hover {
+    color: #FEA3AC;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.active {
+  color: #FEA3AC;
+}
