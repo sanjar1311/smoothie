@@ -420,6 +420,7 @@ img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding: 15px;
 }
 
 .sitenav__list {
@@ -458,5 +459,88 @@ img {
 
 .active {
   color: #FEA3AC;
+}
+
+.sitenav__menu-btn {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .sitenav__menu-btn {
+    display: block;
+    border: none;
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+    width: 40px;
+    height: 35px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 35px 30px;
+  }
+  .sitenav__menu-btn--open {
+    background-image: url("../img/menu.svg");
+  }
+  .sitenav__list {
+    display: none;
+  }
+  .sitenav--open .sitenav__list {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: #fff;
+    -webkit-animation: menu-toggler 0.5s ease forwards;
+            animation: menu-toggler 0.5s ease forwards;
+  }
+  .sitenav--open .sitenav__list--left {
+    top: 110px;
+  }
+  .sitenav--open .sitenav__list--right {
+    top: 260px;
+  }
+  .sitenav--open .sitenav__list--left .sitenav__item {
+    margin-right: 0;
+    text-align: center;
+  }
+  .sitenav--open .sitenav__list--right .sitenav__item {
+    margin-left: 0;
+    text-align: center;
+  }
+  .sitenav--open .sitenav__link {
+    display: block;
+    font-size: 20px;
+    padding-top: 20px;
+    letter-spacing: 2px;
+  }
+}
+
+@-webkit-keyframes menu-toggler {
+  from {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes menu-toggler {
+  from {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
 }
 /*# sourceMappingURL=main.css.map */
