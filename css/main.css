@@ -481,6 +481,9 @@ img {
   .sitenav__menu-btn--open {
     background-image: url("../img/menu.svg");
   }
+  .sitenav__menu-btn--close {
+    background-image: url("../img/close.svg");
+  }
   .sitenav__list {
     display: none;
   }
