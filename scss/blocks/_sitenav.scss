@@ -95,6 +95,16 @@
   }
 }
 
+@media only screen and (max-width: 500px) {
+
+  .sitenav--open .sitenav__list--left {
+    top: 95px;
+  }
+  .sitenav--open .sitenav__list--right {
+    top: 245px;
+  }
+}
+
 @keyframes menu-toggler {
   from{
     transform: translateX(100%);
