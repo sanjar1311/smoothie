@@ -343,7 +343,7 @@ template {
 
 /* waiting-for-the-sunrise-regular - latin */
 @font-face {
-  font-family: 'Waiting for the Sunrise';
+  font-family: "Waiting for the Sunrise";
   font-style: normal;
   font-weight: 400;
   src: local(""), url("../fonts/waiting-for-the-sunrise-v11-latin-regular.woff2") format("woff2"), url("../fonts/waiting-for-the-sunrise-v11-latin-regular.woff") format("woff");
@@ -570,5 +570,37 @@ img {
   .site-logo__img {
     width: 150px;
   }
+}
+
+.about {
+  color: #fff;
+  text-align: center;
+}
+
+.about__container {
+  max-width: 1860px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding: 150px 0;
+  background-image: url("../img/Slider.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+
+.about__title {
+  font-size: 50px;
+  line-height: 62px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.about__text {
+  font-size: 30px;
+  line-height: 50px;
+  font-family: "Waiting for the Sunrise";
+  margin: 0;
 }
 /*# sourceMappingURL=main.css.map */
