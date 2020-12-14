@@ -603,4 +603,55 @@ img {
   font-family: "Waiting for the Sunrise";
   margin: 0;
 }
+
+.hero {
+  background-image: url("../img/hero-bg.png");
+  background-repeat: no-repeat;
+  background-position: center 20%;
+  background-size: 380px auto;
+  margin: 70px 0 60px 0;
+}
+
+.hero__container {
+  max-width: 1160px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.hero__hero-boxes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.hero__hero-box {
+  max-width: 330px;
+  margin-bottom: 80px;
+}
+
+.hero__hero-box:nth-child(even) {
+  margin-left: auto;
+}
+
+.hero__hero-box:nth-child(odd) {
+  margin-right: 100px;
+}
+
+.hero__hero-box-title {
+  margin: 0;
+  font-size: 30px;
+  color: #433840;
+  line-height: 37px;
+  font-weight: 400;
+}
+
+.hero__hereo-box-text {
+  color: #9A9A9A;
+  font-size: 15px;
+  line-height: 24px;
+}
 /*# sourceMappingURL=main.css.map */
