@@ -587,7 +587,7 @@ img {
   background-image: url("../img/Slider.png");
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: contain;
+  background-size: cover;
 }
 
 .about__title {
